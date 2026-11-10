@@ -1,0 +1,146 @@
+{
+  "generatedAt": "2026-11-06T16:20:52.452Z",
+  "platform": "win32",
+  "node": "v24.22.1",
+  "ffmpeg": "ffmpeg version N-126390-g9fc8c785e2 Copyright (c) 2000-2026 the FFmpeg developers",
+  "syntheticOnly": true,
+  "apiRequests": 0,
+  "checks": [
+    "12 extractions: audio only, full decode, duration retained; 4 stream-copy packet hashes match",
+    "video without audio rejected",
+    "corrupt media rejected",
+    "empty file and unsupported extension rejected",
+    "50,000,001-byte input rejected before media processing",
+    "301-second input rejected without truncation",
+    "hung child process killed on timeout",
+    "MP4 video+audio multipart payload round-trip retains exact bytes; no HTTP request sent"
+  ],
+  "measurements": [
+    {
+      "fixture": "synthetic-120s.mp4",
+      "sourceBytes": 1007284,
+      "mode": "copy",
+      "bytes": 979040,
+      "milliseconds": 128,
+      "duration": 120,
+      "codec": "aac",
+      "sourceCodec": "aac"
+    },
+    {
+      "fixture": "synthetic-120s.mp4",
+      "sourceBytes": 1007284,
+      "mode": "mp3",
+      "bytes": 961100,
+      "milliseconds": 346,
+      "duration": 120.033063,
+      "codec": "mp3",
+      "sourceCodec": "aac"
+    },
+    {
+      "fixture": "synthetic-120s.mp4",
+      "sourceBytes": 1007284,
+      "mode": "wav",
+      "bytes": 3840078,
+      "milliseconds": 150,
+      "duration": 120,
+      "codec": "pcm_s16le",
+      "sourceCodec": "aac"
+    },
+    {
+      "fixture": "synthetic-120s.webm",
+      "sourceBytes": 1364140,
+      "mode": "copy",
+      "bytes": 1350386,
+      "milliseconds": 89,
+      "duration": 120.008,
+      "codec": "opus",
+      "sourceCodec": "opus"
+    },
+    {
+      "fixture": "synthetic-120s.webm",
+      "sourceBytes": 1364140,
+      "mode": "mp3",
+      "bytes": 961100,
+      "milliseconds": 361,
+      "duration": 120.033063,
+      "codec": "mp3",
+      "sourceCodec": "opus"
+    },
+    {
+      "fixture": "synthetic-120s.webm",
+      "sourceBytes": 1364140,
+      "mode": "wav",
+      "bytes": 3840078,
+      "milliseconds": 249,
+      "duration": 120,
+      "codec": "pcm_s16le",
+      "sourceCodec": "opus"
+    },
+    {
+      "fixture": "synthetic-300s.mp4",
+      "sourceBytes": 2521169,
+      "mode": "copy",
+      "bytes": 2452579,
+      "milliseconds": 124,
+      "duration": 300,
+      "codec": "aac",
+      "sourceCodec": "aac"
+    },
+    {
+      "fixture": "synthetic-300s.mp4",
+      "sourceBytes": 2521169,
+      "mode": "mp3",
+      "bytes": 2401100,
+      "milliseconds": 929,
+      "duration": 300.033063,
+      "codec": "mp3",
+      "sourceCodec": "aac"
+    },
+    {
+      "fixture": "synthetic-300s.mp4",
+      "sourceBytes": 2521169,
+      "mode": "wav",
+      "bytes": 9600078,
+      "milliseconds": 355,
+      "duration": 300,
+      "codec": "pcm_s16le",
+      "sourceCodec": "aac"
+    },
+    {
+      "fixture": "synthetic-300s.webm",
+      "sourceBytes": 3415997,
+      "mode": "copy",
+      "bytes": 3381938,
+      "milliseconds": 131,
+      "duration": 300.008,
+      "codec": "opus",
+      "sourceCodec": "opus"
+    },
+    {
+      "fixture": "synthetic-300s.webm",
+      "sourceBytes": 3415997,
+      "mode": "mp3",
+      "bytes": 2401100,
+      "milliseconds": 1095,
+      "duration": 300.033063,
+      "codec": "mp3",
+      "sourceCodec": "opus"
+    },
+    {
+      "fixture": "synthetic-300s.webm",
+      "sourceBytes": 3415997,
+      "mode": "wav",
+      "bytes": 9600078,
+      "milliseconds": 675,
+      "duration": 300,
+      "codec": "pcm_s16le",
+      "sourceCodec": "opus"
+    }
+  ],
+  "limitations": [
+    "No real meeting recording supplied",
+    "No OpenAI acceptance or transcription tested",
+    "Windows timings do not predict Vercel timings",
+    "Linux execution requires Linux or Vercel"
+  ]
+}

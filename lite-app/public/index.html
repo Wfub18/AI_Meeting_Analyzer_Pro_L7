@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Meeting Analyzer Lite</title>
+  <link rel="stylesheet" href="/style.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+<main>
+  <header>
+    <h1>AI Meeting Analyzer <span>Lite</span></h1>
+    <p>Транскрипт встречи, решения, следующие задачи и открытые вопросы.</p>
+  </header>
+  <section class="upload" aria-labelledby="upload-title">
+    <h2 id="upload-title">Добавить запись</h2>
+    <p id="requirements">Один файл MP4 или WebM, до 5 минут и 50 МБ. Для конспекта аудио и текст отправляются в OpenAI.</p>
+    <label for="video">Выберите видео. Обработка начнётся сразу.</label>
+    <input id="video" type="file" accept=".mp4,.webm" aria-describedby="requirements">
+    <form id="drive-import" class="drive-import">
+      <label for="drive-url">Публичная ссылка Google Drive</label>
+      <div class="import-controls">
+        <input id="drive-url" type="url" required maxlength="2048" placeholder="https://drive.google.com/…" aria-describedby="drive-help">
+        <button id="drive-submit" type="submit">Импортировать</button>
+      </div>
+      <small id="drive-help">Публичный MP4 или WebM с разрешённым скачиванием, до 5 минут и 50 МБ.</small>
+    </form>
+    <p id="notice" role="status"></p>
+    <button id="import-previous" type="button" hidden>Открыть предыдущую встречу</button>
+  </section>
+  <div class="layout">
+    <section aria-labelledby="history-title"><h2 id="history-title">История встреч</h2><ul id="history"></ul><p id="empty">Здесь появятся загруженные встречи.</p></section>
+    <section id="detail" aria-labelledby="detail-title"><h2 id="detail-title">Результат</h2><p>Выберите встречу из истории.</p></section>
+  </div>
+</main>
+</body>
+</html>

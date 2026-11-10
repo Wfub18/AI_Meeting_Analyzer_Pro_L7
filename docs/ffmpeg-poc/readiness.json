@@ -1,0 +1,12 @@
+{
+  "structure": "PASS",
+  "runtime": "nodejs24.x",
+  "routes": "one API route; all others 404",
+  "exactFileAllowlist": "PASS",
+  "packagedBinaryHashes": "PASS",
+  "functionBytes": 167808744,
+  "linux0755VerifiedHere": false,
+  "windowsPrebuiltDeploymentRecommended": false,
+  "vercelValidationExecuted": false,
+  "deployed": false
+}

@@ -1,0 +1,45 @@
+{
+  "generatedAt": "2026-11-06T18:25:15.165Z",
+  "buildHost": "win32",
+  "target": "Linux x64 / Vercel Node.js 24",
+  "totalBytes": 167808744,
+  "belowConservative250MB": true,
+  "archiveChecks": [
+    {
+      "name": "ffmpeg-linux-x64.gz",
+      "bytes": 29354986,
+      "sha256": "bfe8a8fc511530457b528c48d77b5737527b504a3797a9bc4866aeca69c2dffa",
+      "matchesPublishedDigest": true
+    },
+    {
+      "name": "ffprobe-linux-x64.gz",
+      "bytes": 29276839,
+      "sha256": "25d9b6ccb05e3d9de9e04e31e2506d8dd7f9f0418981965ac6df12e8d3afd067",
+      "matchesPublishedDigest": true
+    }
+  ],
+  "assets": [
+    {
+      "name": "ffmpeg",
+      "bytes": 79826272,
+      "format": "ELF64 x86-64",
+      "hasInterpreter": false,
+      "expectedMode": "0755",
+      "linuxModeVerified": false,
+      "sha256": "e7e7fb30477f717e6f55f9180a70386c62677ef8a4d4d1a5d948f4098aa3eb99"
+    },
+    {
+      "name": "ffprobe",
+      "bytes": 79665792,
+      "format": "ELF64 x86-64",
+      "hasInterpreter": false,
+      "expectedMode": "0755",
+      "linuxModeVerified": false,
+      "sha256": "4f231a1960d83e403d08f7971e271707bec278a9ae18e21b8b5b03186668450d"
+    }
+  ],
+  "linuxExecuted": false,
+  "vercelBuildExecuted": false,
+  "deployed": false,
+  "note": "Locally assembled Build Output API directory. ELF headers and size verified, not Linux runtime compatibility. Re-run on Linux to ensure executable bits."
+}

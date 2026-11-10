@@ -1,0 +1,39 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #edf3f2; color: #162f30; font: 1rem/1.55 system-ui, sans-serif; }
+main { max-width: 1140px; margin: auto; padding: 2.5rem 1.25rem; }
+header { margin-bottom: 1.75rem; }
+.eyebrow { color: #426663; font-size: .85rem; font-weight: 650; }
+h1 { margin: 0; font-size: clamp(1.9rem, 5vw, 3rem); line-height: 1.2; }
+h1 span { color: #1e7269; }
+h2 { margin: 0 0 .65rem; font-size: 1.3rem; }
+h3 { margin: 1.35rem 0 .4rem; font-size: 1.05rem; }
+p { margin: .45rem 0; }
+section { background: #fff; padding: 1.3rem; border: 1px solid #cfdfdd; border-radius: .85rem; min-width: 0; overflow-wrap: anywhere; }
+.upload { margin-bottom: 1rem; }
+.upload label { display: block; margin: 1rem 0 .4rem; }
+input { max-width: 100%; }
+::file-selector-button, button { font: inherit; cursor: pointer; }
+::file-selector-button { padding: .35rem .75rem; border: 1px solid #1e7269; border-radius: .4rem; background: #1e7269; color: white; margin-right: .5rem; }
+input:disabled::file-selector-button { opacity: .65; cursor: default; }
+.drive-import { margin-top: 1.25rem; }
+.import-controls { display: flex; flex-wrap: wrap; gap: .5rem; }
+#drive-url { flex: 1 1 20rem; min-width: 0; padding: .35rem .6rem; border: 1px solid #cfdfdd; border-radius: .4rem; font: inherit; }
+#drive-submit, #import-previous { padding: .35rem .75rem; border: 1px solid #1e7269; border-radius: .4rem; background: #1e7269; color: white; }
+#drive-submit:disabled { opacity: .65; cursor: default; }
+#drive-help { margin-top: .35rem; }
+.layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: 1rem; align-items: start; }
+#history { list-style: none; margin: 0; padding: 0; }
+#history li { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: .35rem; align-items: center; }
+#history li + li { margin-top: .55rem; }
+#history button { width: 100%; text-align: left; overflow-wrap: anywhere; padding: .6rem .75rem; border: 1px solid #cfdfdd; border-radius: .45rem; background: #f5faf9; color: inherit; }
+#history button[aria-current="true"] { border-color: #1e7269; background: #e0f2ec; }
+#history .delete-meeting { width: 2.4rem; height: 2.4rem; padding: 0; text-align: center; }
+#history .delete-meeting:not(:disabled):hover { color: #9b301b; border-color: #9b301b; }
+#history .delete-meeting:disabled { opacity: .45; cursor: default; }
+:focus-visible { outline: 2px solid #1e7269; outline-offset: 2px; }
+small, .meta { display: block; color: #426663; }
+.problem { color: #9b301b; }
+.transcript { white-space: pre-wrap; }
+details { margin-top: .35rem; }
+summary { cursor: pointer; }
+@media (max-width: 650px) { .layout { grid-template-columns: 1fr; } main { padding-top: 1.5rem; } }
